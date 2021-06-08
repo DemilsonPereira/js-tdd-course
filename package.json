@@ -45,5 +45,10 @@
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "prepush": "npm run lint"
+    }
   }
 }
