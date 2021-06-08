@@ -8,7 +8,7 @@
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "pre-push": "npm run lint",
+    "prepush": "npm run lint && npm test",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
@@ -44,8 +44,6 @@
     "husky": "^6.0.0",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
-    "pre-push": "^0.1.1",
-    "prepush": "^3.1.11",
     "rimraf": "^2.6.1"
   }
 }
