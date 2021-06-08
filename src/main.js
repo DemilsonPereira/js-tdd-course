@@ -1,5 +1,5 @@
 const a = 3;
-const b = 2;
+const a = 2;
 
 function sum() {
      return a + b;
