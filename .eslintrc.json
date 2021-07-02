@@ -3,5 +3,8 @@
     "plugins": [
         "import",
         "jest"
-    ]
+    ],
+    "env": {
+      "jest/globals": true
+    }
 }
